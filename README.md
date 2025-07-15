@@ -32,14 +32,13 @@ Define your recurring shell tasks, either by using the `add` command or editing 
 ### For General Use (Prebuilt Releases)
 - No installation needed beyond unpacking.
 - Compatiable with:
-    - **macOS**
-    - **Linux (x86_64, ARM)**
-    - **Windows 10+ (x64)**
+    - **macOS (Intel, Apple Silicon)**
+    - **Linux (x86_64, ARM64)**
+    - **Windows 10+ (x64, 32-bit)**
 
 ### For Development / Building From Source
 - Go 1.20+
 - Git
-- (Optional) `tar` or `zip` utility if you're packaging it manually
 
 # Installation & Usage
 ### Quick Start (Using Prebuilt Binaries)
@@ -52,17 +51,17 @@ https://github.com/Ege-Okyay/jobctl/releases
     - Download `jobctl.exe` from the latest release.
     - Run it directly from the download folder, or move it somewhere in your system `PATH` (e.g. `c:\Tools\`).
     - Optional (to add to `PATH`)
-    ```powershell
-    setx PATH "$($Env:PATH);C:\Path\To\jobctl"
-    ```
+        ```powershell
+        setx PATH "$($Env:PATH);C:\Path\To\jobctl"
+        ```
 
     **macOS / Linux**
     - Download the appropriate `jobctl` binary (no extensions).
     - Make it executable and move it to your `PATH`:
-    ```bash
-    chmod +x jobctl
-    sudo mv jobctl /usr/local/bin/
-    ```
+        ```bash
+        chmod +x jobctl
+        sudo mv jobctl /usr/local/bin/
+        ```
 
 3. First-time setup:
     ```bash
