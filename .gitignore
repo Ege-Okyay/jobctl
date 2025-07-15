@@ -1,0 +1,38 @@
+# Builds
+builds/
+
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go toolchain
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Editor-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Local configuration files
+.env
+
+# Database files
+*.db
+
+# Log files
+*.log
+
+# Project-specific build outputs
+jobctl
