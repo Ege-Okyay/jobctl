@@ -51,6 +51,7 @@ https://github.com/Ege-Okyay/jobctl/releases
     - Download `jobctl.exe` from the latest release.
     - Run it directly from the download folder, or move it somewhere in your system `PATH` (e.g. `c:\Tools\`).
     - Optional (to add to `PATH`)
+
         ```powershell
         setx PATH "$($Env:PATH);C:\Path\To\jobctl"
         ```
@@ -58,12 +59,14 @@ https://github.com/Ege-Okyay/jobctl/releases
     **macOS / Linux**
     - Download the appropriate `jobctl` binary (no extensions).
     - Make it executable and move it to your `PATH`:
+
         ```bash
         chmod +x jobctl
         sudo mv jobctl /usr/local/bin/
         ```
 
 3. First-time setup:
+
     ```bash
     jobctl
     ```
@@ -73,6 +76,7 @@ https://github.com/Ege-Okyay/jobctl/releases
     - **Windows:** `%APPDATA%\jobctl\jobs.toml`
 
     Then start the shell:
+
     ```bash
     jobctl
     ```
@@ -110,11 +114,13 @@ Here's how `jobs.toml` looks like:
 Once you've edited and saved this file, `jobctl` will pickup changes automatically
 
 Override `jobs.toml` file:
+
 ```bash
 jobctl config set /path/to/custom/custom-jobs.toml
 ```
 
 # CLI Usage
+
 ```bash
 # Add a new job:
 jobctl add --name backup --interval 3600 --command "/usr/local/bin/backup.sh" [--retries <n>] [--timeout <seconds>]
