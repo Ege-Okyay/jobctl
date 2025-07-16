@@ -16,7 +16,6 @@ func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	// TOOD: Watcher still not starting
 	go watcher.WatchConfig(ctx, paths.ConfigPath, 5*time.Second)
 	go runner.RunScheduler(ctx)
 
